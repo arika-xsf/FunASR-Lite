@@ -1,0 +1,32 @@
+# ===== Python 通用 =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+*.egg
+
+# ===== 虚拟环境(用户自己建, 体积 GB 级, 绝不入库) =====
+venv/
+
+# ===== funasr 源码(嵌套 git 仓库; 未改过, 对方用 pip install funasr==1.4.2 即可) =====
+FunASR/
+
+# ===== ffmpeg 二进制(运行时由 imageio-ffmpeg 自动抽取到 bin/, 84MB 不入库) =====
+bin/
+
+# ===== 识别输出(用户自己的转写结果) =====
+outputs/
+
+# ===== 日志 =====
+*.log
+webui_run.log
+
+# ===== 本地配置(曾含 API Key 等, 不入库) =====
+llm_config.json
+*.local
+
+# ===== 编辑器 / 系统 =====
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
