@@ -1,0 +1,4 @@
+# 文本文件统一换行；bat 必须保持 CRLF，且禁止 Git 做任何换行转换
+# (cmd.exe 只认 CRLF, LF 会报「不是内部或外部命令」; git archive / clone 均须原样保留)
+* text=auto
+*.bat -text
